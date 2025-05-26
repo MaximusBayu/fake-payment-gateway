@@ -15,9 +15,9 @@ app
     .use(router()) // Use the Router on the sub routes
     .use(KoaStatic('public')) // server statics
     // Bootstrap the server
-    .listen(process.env.PORT || 5100, () =>
+    .listen(process.env.PORT || 5100, '0.0.0.0',() =>
     {
-        console.log('server stared with port 5100');
+        console.log('server stared with port 0.0.0.0:5100');
 
         console.log();
         console.log();
