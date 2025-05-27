@@ -22,7 +22,7 @@ const jsonErrorHandler = async (ctx, next) =>
     }
     catch (err)
     {
-        const isJson = ctx.get('Accept') === 'application/json';
+        const isJson = ctx.accepts('json');
 
         if (isJson)
         {
